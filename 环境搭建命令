@@ -1,0 +1,42 @@
+cuda10所配对的tensorflow最低是tensorflow1.13
+tensorflow1.13不能使用numpy1.17以上
+可以安装tensorflow1.13.1，以及numpy1.16.3
+
+---安装结果
+CUDA10.0
+tensorflow1.13.1
+numpy1.16.3
+
+命令
+pip install xxx -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
+
+
+安装步骤：
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+conda config --set show_channel_urls yes
+
+conda create -n tensorflow python=3.6
+conda activate tensorflow
+
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple tensorflow-gpu==1.13.1
+pip show -f tensorflow-gpu       # 查看pip安装后的文件位置
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple numpy==1.16.3
+
+
+
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+conda config --set show_channel_urls yes 
+conda install pytorch torchvision cudatoolkit=10.0
+
+离线安装pytorch
+conda create -n pytorch python=3.6
+不激活pytorch
+conda install --offline -n pytorch 拉取你的安装包
+结果如下：(base) C:\Users\1802>conda install --offline -n pytorch D:\software\Anaconda3\envs\pytorch-1.0.0-py3.6_cuda100_cudnn7_1.tar.bz2
+注意末尾bz2没有点
+装了pytorch和torchvision之后
+
+
+
