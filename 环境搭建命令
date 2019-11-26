@@ -31,12 +31,14 @@ conda config --set show_channel_urls yes
 conda install pytorch torchvision cudatoolkit=10.0
 
 离线安装pytorch
-conda create -n pytorch python=3.6
+--conda create -n pytorch python=3.6
 不激活pytorch
-conda install --offline -n pytorch 拉取你的安装包
+--conda install --offline -n pytorch 拉取你的安装包
 结果如下：(base) C:\Users\1802>conda install --offline -n pytorch D:\software\Anaconda3\envs\pytorch-1.0.0-py3.6_cuda100_cudnn7_1.tar.bz2
 注意末尾bz2没有点
 装了pytorch和torchvision之后
-
-
+--conda activate pytorch
+--pip install numpy -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
+--pip install pillow -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
+--pip install six -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
 
