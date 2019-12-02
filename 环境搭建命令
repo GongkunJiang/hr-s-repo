@@ -44,5 +44,6 @@ conda install pytorch torchvision cudatoolkit=10.0
 
 其他部件安装：
 1.cv2
-
 pip install opencv-python -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
+2.scikit-image
+pip install scikit-image -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
