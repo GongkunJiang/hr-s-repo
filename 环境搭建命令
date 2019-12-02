@@ -11,7 +11,7 @@ numpy1.16.3
 pip install xxx -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
 
 
-安装步骤：
+tensorflow安装步骤：
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
 conda config --set show_channel_urls yes
 
@@ -21,7 +21,7 @@ conda activate tensorflow
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple tensorflow-gpu==1.13.1
 pip show -f tensorflow-gpu       # 查看pip安装后的文件位置
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple numpy==1.16.3
-
+------------------------------------------------------------------------------------------
 
 
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/
