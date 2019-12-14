@@ -16,6 +16,9 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/
 conda config --set show_channel_urls yes
 
 conda create -n tensorflow python=3.6
+conda env list
+conda env remove -n tensorflow
+
 conda activate tensorflow
 
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple tensorflow-gpu==1.13.1
